@@ -4,9 +4,9 @@
   "description": "API Bíblia versão NVI",
   "main": "index.js",
   "scripts": {
-    "dev": "node_env=DEVELOPMENT nodemon src/index.js",
+    "dev": "nodemon src/index.js",
     "test": "ava --verbose",
-    "production": "node_env=PRODUCTION pm2 start src/index.js --name bible-edge"
+    "production": "pm2 start src/index.js --name bible-edge"
   },
   "author": "Rafael Ribeiro @rribeiro1",
   "license": "ISC",
@@ -23,5 +23,8 @@
     "nodemon": "^1.14.12",
     "restify": "^6.3.4",
     "restify-cors-middleware": "^1.1.0"
+  },
+  "dependencies": {
+    "eureka-js-client": "^4.4.0"
   }
 }
