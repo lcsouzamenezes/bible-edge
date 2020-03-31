@@ -21,6 +21,8 @@ jobs: # a collection of steps
             - ./node_modules
       - persist_to_workspace:
           root: ~/app
+          paths:
+            - .
 
   build_container:
     docker:
